@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewpoint" content="width=device-width">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>online fx calculator</title>
+</head>
+
+<body>
+    <div class="mainctr">
+        <div class="navbar">
+            <div class="logo">
+                <span class="txt A">W</span>
+                <span class="txt B">i</span>
+                <span class="txt C">l</span>
+                <span class="txt D">l</span>
+                <span class="txt E">k</span>
+                <span class="txt F">i</span>
+                <span class="txt G">n</span>
+                <span class="txt H">s</span>
+            </div>
+
+            <ul>
+                <li><a href="#">home</a> </li>
+                <li><a href="#">about</a> </li>
+                <li><a href="#">carriers</a> </li>
+                <li><a href="#">contacts</a> </li>
+                
+            </ul>
+
+        </div>
+    
+    
+
+    <div class="container">
+        
+        <div class="calculator">
+            <form action="">
+                <div class="calc-name">
+                    <p>Casio:5th Edition</p>
+                    <p>Fx-100MS.</p>
+                </div>
+
+                <div class="display">    
+                    <input type="text" name="display">
+                </div>
+
+                <div>
+                    <input type="button" value="AC" button onclick="display.value=''">
+                    <input type="button" value="DE" button onclick="display.value=display.value.toString().slice(0, -1)">
+                    <input type="button" value="." button onclick="display.value+='.'">
+                    <input type="button" value="/" button onclick="display.value+='/'">
+                </div>
+
+                <div>
+                    <input type="button" value="7" button onclick="display.value+=7">
+                    <input type="button" value="8" button onclick="display.value+=8">
+                    <input type="button" value="9" button onclick="display.value+=9">
+                    <input type="button" value="*" button onclick="display.value+='*'">
+                </div>
+
+                <div>
+                    <input type="button" value="4" button onclick="display.value+=4">
+                    <input type="button" value="5" button onclick="display.value+=5">
+                    <input type="button" value="6" button onclick="display.value+=6">
+                    <input type="button" value="-" button onclick="display.value+='-'">
+                </div>
+
+                <div>
+                    <input type="button" value="1" button onclick="display.value+=1" >
+                    <input type="button" value="2" button onclick="display.value+=2">
+                    <input type="button" value="3" button onclick="display.value+=3">
+                    <input type="button" value="+" button onclick="display.value+='+'">
+                </div>
+
+                <div>
+                    <input type="button" value="00" button onclick="display.value+=00">
+                    <input type="button" value="0" button onclick="display.value+=0">
+                    <input  class="equal" type="button" value="="  onclick="display.value=eval(display.value)">
+                    
+                </div>
+            </form>   
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+
+
+
+
+</html>

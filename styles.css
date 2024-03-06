@@ -1,0 +1,210 @@
+*{ 
+    padding: 0;
+    margin:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,   
+}
+
+body{
+    background:linear-gradient(to right,rgba(0, 0, 255, 0.692), green, #162e4f);
+    
+}
+
+
+/* ===== NAV SECTION === */
+
+.navbar{
+    background-color:#162e4f;
+    border-bottom:1px solid white;
+    display:flex;
+    justify-content: space-between;
+    padding:5px 25px;
+    text-transform: capitalize;
+    height:100%;
+    align-items: center;
+    
+}
+
+
+ul{
+    list-style: none;
+}
+a{
+   text-decoration: none;
+}
+
+.logo{
+    display:inline-flex;
+    font-size: 20px;
+    font-family: cursive;
+    padding: 5px;
+}
+
+.logo .txt{
+    font-family: cursive;
+    text-align: center;
+    padding:4px;
+    font-weight: 900;
+    color:cyan;
+}
+
+.txt.a{
+    color:rgb(17, 15, 17);
+    font-size:32px;
+}
+.logo .txt.B,
+.logo .txt.E,
+.logo .txt.E{
+    color:rgb(28, 224, 45);
+}
+
+
+.logo .txt.C{
+    color:WHITE;
+}
+
+.logo .txt.H{
+    color:rgb(3, 26, 4);
+}
+
+ul li{
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    padding:3px 0;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in-out;   
+    position: relative;
+}
+
+ul li:before{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width:0%;
+    height: 2px;
+    bottom:-5px ;
+    transition: 0.3s ease-in-out;   
+    
+}
+
+ul li:hover::before{
+    width:100%;  
+}
+
+li a{
+    color:white;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 0;
+    text-align: center;
+    justify-content: center;
+    padding:4px 5px;
+}
+
+/*  ===== BODY SECTION ======= */
+.container{
+    background-color:transparent;
+    height:100%;
+    display:flex;
+    justify-content: center;
+}
+
+.calculator{
+    background-color:#162e4f ;
+    padding: 15px;
+    margin:40px;
+    border: 3px solid blue;
+    border-radius: 15px;
+    box-shadow: -13px -13px black;
+
+}
+
+.calc-name{
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    padding:0 5px;
+}
+
+.calc-name>p{
+    cursor: pointer;
+}
+
+.calculator form input{
+    font-size: 20px;
+    color:white;
+    background-color: transparent;
+    font-weight: bold;
+    font-family: cursive;
+    margin: 8px;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
+    border:none;
+     outline: none;
+    cursor:pointer;
+    text-align: center;
+    width:60px;
+    height: 60px;
+    transition: 0.9s ease;
+    box-shadow: -6px -8px rgba(255, 255, 255, 0.2),5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition:0.2s ease-in-out;
+}
+
+form input:hover ,
+form input:focus {
+    background-color: rgb(59, 122, 182);
+    color:green;
+    transform:scale(1.05);
+    
+}
+
+.calculator form .display{
+    margin: 20px 0;
+    padding: 0;
+    justify-content: flex-end;
+    display:flex;
+}
+
+.calculator form .display input{
+    font-size: 45px;
+    padding:20px;
+    text-align: right;
+    border:4px solid #fff;
+    flex:1; 
+    box-shadow: none;
+
+    }
+form input.equal{
+    
+    width:130px;
+    
+    
+}
+
+/*  ======= RESPONSIVENESS ===== */
+
+@media (max-width: 650px) {
+    .navbar{
+        padding:5px 5px;
+
+    }
+
+    .logo .txt{   
+        padding: 2px;
+    }
+
+    ul li{
+        margin-right: 15px;    
+    }
+
+    li a{     
+        font-size: 16px; 
+        padding:4px 5px;
+    }
+    
+}
+
